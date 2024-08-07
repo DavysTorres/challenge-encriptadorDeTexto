@@ -1,0 +1,144 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+.logo{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+}
+.areaDatos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 0px 80px 0px 350px;;
+    box-sizing: border-box;
+}
+.text-input {
+    all: unset;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: none;
+}
+.text-input::placeholder {
+    font-weight: bold;
+    color: #0A3871;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+}
+.note-text {
+    align-items: start;
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+.encrypt-button, .decrypt-button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #696969;
+    border-radius: 18px;
+}
+
+.encrypt-button {
+    background-color: #0A3871;
+    color: #ffffff;
+}
+
+.decrypt-button {
+    background-color: transparent;
+    color: #333;
+}
+.copytext{
+    align-items: end;
+}
+.areaRespueta{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px 40px 20px 20px;
+    box-sizing: border-box;
+}
+
+.message-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+img{
+    width: 250px;
+    margin-bottom: 40px;
+}
+
+.message-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.sub-text {
+    margin: 0 0 80px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+    .areaDatos {
+        margin: 0px 80px 0px 350px;
+    }
+    .text-input {
+        height: 400px;
+    }
+    .button-container {
+        gap: 20px;
+    }
+    .encrypt-button, .decrypt-button {
+        width: 200px;
+    }
+    .areaRespueta {
+        margin: 20px 40px 20px 20px;
+    }
+    img {
+        width: 250px;
+        margin-bottom: 40px;
+    }
+    .sub-text {
+        margin: 0 0 80px;
+    }
+}
